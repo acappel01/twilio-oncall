@@ -69,7 +69,7 @@
         $json_output3 = json_decode($json3,true);
         $tech_contact =  $json_output3['contact_methods'][1]['phone'];
         echo '<Say>All calls are recorded.</Say>';
-        echo '<Dial record = "record-from-ringing" action="um-handle-second-call.php">';
+        echo '<Dial record = "record-from-ringing" action="handle-second-call.php">';
         echo '<Number>1'.$tech_contact.'</number>';
         echo '</Dial>';
         #var_dump($json_output3);
