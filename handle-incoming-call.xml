@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	<Gather action="handle-user-input.php" numDigits="1">
+		<Say>Hello.</Say>
+		<Say>You have reached the On-Call line.</Say>
+		<Say>For Brand X, press 1.</Say>
+		<Say>For all other products, press 2.</Say>
+	</Gather>
+	<!-- If customer doesn't input anything, prompt and try again. -->
+	<Say>Sorry, I didn't get your response.</Say>
+	<Redirect>handle-incoming-call.xml</Redirect>
+</Response>
